@@ -1,0 +1,73 @@
+.navbar-custom {
+  background: white;
+  border-bottom: 2px solid #f0f0f0;
+  padding: 15px 0;
+}
+
+.navbar-custom .navbar-brand {
+  transition: all 0.3s ease;
+}
+
+.navbar-custom .navbar-brand:hover {
+  transform: scale(1.05);
+}
+
+.nav-link-custom {
+  color: #495057 !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.nav-link-custom:hover {
+  color: #667eea !important;
+  background: #f0f4ff;
+  transform: translateY(-2px);
+}
+
+.nav-link-custom.active {
+  color: #667eea !important;
+  background: #e7f1ff;
+  border-left: 3px solid #667eea;
+}
+
+.badge {
+  position: absolute;
+  /* Adjust these two values to move the badge */
+  top: -2px !important;    /* Move down slightly from the very top */
+  right: -2px !important;  /* Move left so it doesn't bleed into the next item */
+  
+  /* Make it smaller and cleaner */
+  font-size: 10px;
+  width: 10px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding: 0;
+  z-index: 10;
+  pointer-events: none; /* Prevents badge from interfering with clicks */
+}
+
+@media (max-width: 992px) {
+  .nav-link-custom {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-collapse {
+    background: white;
+    border-top: 1px solid #f0f0f0;
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

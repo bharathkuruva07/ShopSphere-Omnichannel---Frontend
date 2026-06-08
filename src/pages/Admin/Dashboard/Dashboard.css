@@ -1,0 +1,60 @@
+.dashboard {
+  background: #f8f9fa;
+  min-height: 100vh;
+}
+
+.stat-card {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(27, 202, 255, 0.674) !important;
+}
+
+.icon-badge {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.status-list {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.status-item {
+  padding: 12px 0;
+}
+
+.status-item:last-child {
+  border-bottom: none !important;
+}
+
+.status-item .badge {
+  font-size: 0.9rem;
+  padding: 6px 12px;
+}
+
+
+.bg-primary {
+  background-color: #667eea !important;
+}
+
+.bg-success {
+  background-color: #52c41a !important;
+}
+
+.bg-info {
+  background-color: #1890ff !important;
+}
+
+.bg-warning {
+  background-color: #faad14 !important;
+}

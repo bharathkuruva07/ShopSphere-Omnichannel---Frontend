@@ -1,0 +1,571 @@
+/* --- Global Variables (Custom Properties) --- */
+:root {
+  /* Defined variables for easy theme changes and consistency across the app */
+  --primary: #4f46e5;       /* Main brand color (Indigo) used for active states and primary buttons */
+  --primary-dark: #3730a3;  /* Darker shade of primary for hover effects and gradients */
+  --primary-light: #e0e7ff; /* Very light indigo for background highlights on selected items */
+  --bg-page: #f8fafc;       /* Off-white background color for the page body to reduce eye strain */
+  --bg-card: #ffffff;       /* Pure white background for content cards to pop against the page bg */
+  --text-main: #0f172a;     /* Dark slate for primary text (high contrast) */
+  --text-muted: #64748b;    /* Lighter slate for secondary text (labels, descriptions) */
+  --heading-color: #312e81; /* Deep indigo specifically for headings to distinct them from body text */
+  --border: #e2e8f0;        /* Light grey for borders to define structure without being harsh */
+  --success: #10b981;       /* Green color for success messages and "Free" shipping text */
+  --error: #ef4444;         /* Red color for error messages and delete icons */
+  --radius: 16px;           /* Global border-radius for rounded corners on cards and buttons */
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Medium shadow for cards */
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Large shadow for hover states */
+  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); /* Standard animation timing for smooth hover effects */
+}
+
+/* --- Global Reset --- */
+* { box-sizing: border-box; } /* Ensures padding and border are included in element's total width/height */
+
+/* --- Layout & Typography --- */
+.cart-container {
+  min-height: 100vh;        /* Ensures the container takes up at least the full height of the viewport */
+  /* Creates a subtle vertical color fade from light blue to light indigo */
+  background: linear-gradient(180deg, #eff6ff 0%, #e0e7ff 100%);
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif; /* Sets a modern, clean sans-serif font stack */
+  color: var(--text-main);  /* Sets default text color */
+  padding-bottom: 3rem;     /* Adds space at the bottom so content isn't flush with the screen edge */
+}
+
+/* General Typography Styles */
+h1, h2, h3, h4, h5, h6, .card-title {
+  color: var(--heading-color); /* Overrides default black with the deep indigo theme color */
+  letter-spacing: -0.01em;     /* Slightly tightens text for a modern, crisp look */
+}
+
+/* --- Header Styles --- */
+.cart-header {
+  background: rgba(255, 255, 255, 0.85); /* Semi-transparent white background */
+  backdrop-filter: blur(12px);           /* Apply "Frosted Glass" effect to blur content scrolling behind it */
+  padding: 1rem 2rem;                    /* Internal spacing around the header content */
+  display: flex;                         /* Uses Flexbox to align Back button and Title side-by-side */
+  align-items: center;                   /* Vertically centers items */
+  gap: 1rem;                             /* Adds space between the Back button and the H1 title */
+  position: sticky;                      /* Makes the header stick to the top of the viewport when scrolling */
+  top: 0;                                /* Stick exactly at the top edge */
+  z-index: 50;                           /* High z-index ensures header floats above all other page content */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Subtle bottom border */
+  box-shadow: var(--shadow-sm);          /* Small shadow to separate header from page body */
+}
+
+.cart-header h1 { 
+  margin: 0;                /* Removes default browser margin */
+  font-size: 1.25rem;       /* Sets font size */
+  font-weight: 700;         /* Bold font weight */
+}
+
+/* --- Main Grid Layout --- */
+.cart-layout {
+  max-width: 1100px;        /* Limits content width on large screens */
+  margin: 2rem auto;        /* Centers the layout horizontally */
+  display: grid;            /* Uses CSS Grid for the main layout structure */
+  grid-template-columns: 1fr 380px; /* Left column takes available space (1fr), Sidebar is fixed width (380px) */
+  gap: 2rem;                /* Space between the main content and the sidebar */
+  padding: 0 1.5rem;        /* Horizontal padding for smaller screens */
+}
+
+/* Responsive Design for Mobile/Tablet */
+@media (max-width: 900px) { 
+  .cart-layout { grid-template-columns: 1fr; } /* Stacks sidebar below main content on screens smaller than 900px */
+}
+
+/* --- Shared Card Styles --- */
+/* Applies to main content cards, modal popups, and success messages */
+.cart-card, .modal-content, .success-card {
+  background: var(--bg-card);      /* Sets white background */
+  border-radius: var(--radius);    /* Rounds the corners */
+  padding: 1.5rem;                 /* Internal spacing */
+  box-shadow: var(--shadow-md);    /* Adds depth */
+  border: 1px solid var(--border); /* Adds a subtle border definition */
+  margin-bottom: 1.5rem;           /* Spacing between vertical cards */
+  transition: var(--transition);   /* Enables smooth animation for hover effects */
+}
+
+.cart-card:hover {
+  box-shadow: var(--shadow-lg);    /* Increases shadow size on hover for a "lifting" effect */
+  transform: translateY(-2px);     /* Physically moves the card up slightly */
+}
+
+.card-title {
+  margin: 0 0 1rem 0;              /* Margin bottom only */
+  font-size: 1.05rem;              /* Slightly larger than body text */
+  font-weight: 600;                /* Semi-bold */
+  border-bottom: 2px solid var(--bg-page); /* Decorative underline separator */
+  padding-bottom: 0.75rem;         /* Space between text and underline */
+}
+
+/* --- COMPACT DELIVERY MODE SELECTOR --- */
+.mode-grid {
+  display: grid; 
+  grid-template-columns: 1fr 1fr;  /* Creates two equal-width columns for Online vs Store options */
+  gap: 0.75rem;                    /* Spacing between the two options */
+}
+
+.mode-card {
+  display: flex;                   /* Flexbox for internal layout */
+  align-items: center;             /* Vertically centers icon and text */
+  justify-content: center;         /* Horizontally centers content */
+  gap: 0.6rem;                     /* Space between icon and text */
+  padding: 0.6rem 1rem;            /* Compact padding for a slim look */
+  border: 1px solid var(--border); /* Default border color */
+  border-radius: 12px;             /* Rounded corners */
+  background: #ffffff;             /* White background */
+  cursor: pointer;                 /* Changes mouse cursor to pointer to indicate interactivity */
+  transition: var(--transition);   /* Smooth styling changes */
+  height: 52px;                    /* Enforces a specific height for uniformity */
+  position: relative;              /* context for absolute positioning if needed */
+}
+
+.mode-card:hover { 
+  border-color: #cbd5e1;           /* Darkens border slightly on hover */
+  background: #f8fafc;             /* Light grey background on hover */
+}
+
+/* Selected State Styling (Applied when React adds .selected class) */
+.mode-card.selected {
+  border-color: var(--primary);    /* Changes border to Brand Blue */
+  background: var(--primary-light);/* Changes background to very light blue */
+  box-shadow: 0 0 0 1px var(--primary); /* Adds a glow effect using shadow */
+}
+
+.mode-icon {
+  color: var(--text-muted);        /* Default gray icon color */
+  display: flex; align-items: center; justify-content: center;
+  transition: var(--transition);   /* Smooth color change */
+}
+
+.mode-card.selected .mode-icon {
+  color: var(--primary);           /* Changes icon to Brand Blue when selected */
+  transform: scale(1.1);           /* Slightly grows the icon for emphasis */
+}
+
+.mode-info {
+  display: flex; flex-direction: column; /* Stacks Title and Description vertically */
+}
+
+.mode-title { 
+  font-weight: 600; 
+  color: var(--text-main); 
+  font-size: 0.9rem;
+}
+
+/* Custom Radio Circle Indicator */
+.radio-circle {
+  width: 14px; height: 14px;
+  border: 2px solid #cbd5e1;       /* Gray ring */
+  border-radius: 50%;              /* Makes it a perfect circle */
+  margin-left: auto;               /* Pushes the circle to the far right of the flex container */
+  transition: var(--transition);
+}
+
+.mode-card.selected .radio-circle {
+  border-color: var(--primary);    /* Blue border when selected */
+  background: var(--primary);      /* Blue fill when selected */
+  box-shadow: 0 0 0 2px white, 0 0 0 4px rgba(79, 70, 229, 0.2); /* Creates a "focus ring" effect */
+}
+
+/* --- Store List Styles --- */
+.store-list { display: flex; flex-direction: column; gap: 0.75rem; } /* Vertical stack of store options */
+
+.store-item {
+  display: flex; align-items: flex-start; gap: 1rem; padding: 1rem;
+  border: 1px solid var(--border); border-radius: 12px;
+  cursor: pointer; transition: var(--transition);
+  background: white;
+}
+
+.store-item:hover { border-color: var(--primary); background: #f8fafc; } /* Hover interaction */
+
+/* Active Store Styling */
+.store-item.active {
+  border-color: var(--primary);    /* Blue border */
+  background: var(--primary-light);/* Light blue bg */
+  box-shadow: inset 0 0 0 1px var(--primary); /* Inner border effect */
+}
+
+.store-icon { color: var(--primary); margin-top: 2px; } /* Aligns icon with text top */
+.store-details { flex: 1; display: flex; flex-direction: column; gap: 2px; } /* Takes available width */
+.store-name { font-weight: 600; color: var(--text-main); font-size: 0.95rem; }
+.store-address { font-size: 0.85rem; color: var(--text-muted); }
+.store-distance { font-size: 0.75rem; color: var(--success); font-weight: 700; margin-top: 4px; } /* Highlights distance in green */
+
+/* Small Radio Circle for Store List */
+.radio-circle-small {
+  width: 16px; height: 16px; border: 2px solid #cbd5e1; border-radius: 50%; margin-top: 4px; position: relative;
+}
+.store-item.active .radio-circle-small {
+  border-color: var(--primary); background: var(--primary); /* Filled blue when active */
+}
+/* Creates the white dot inside the radio button using CSS pseudo-element */
+.store-item.active .radio-circle-small::after {
+  content: ''; position: absolute; width: 6px; height: 6px; background: white; border-radius: 50%;
+  top: 50%; left: 50%; transform: translate(-50%, -50%); /* Perfectly centers the white dot */
+}
+
+/* --- Forms --- */
+.form-grid { display: grid; gap: 1rem; } /* Stacks inputs with spacing */
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; } /* Side-by-side inputs (e.g. City/State) */
+
+.form-input {
+  width: 100%;                     /* Full width of container */
+  padding: 0.75rem 1rem;           /* Comfortable typing area */
+  border: 1px solid var(--border); /* Subtle border */
+  border-radius: 10px;             /* Rounded input corners */
+  font-size: 0.95rem;
+  background: #f8fafc;             /* Light gray background suggests "input field" */
+  transition: var(--transition);
+}
+
+/* Focus State for Inputs (Accessibility/UX) */
+.form-input:focus { 
+  outline: none;                   /* Removes default browser outline */
+  border-color: var(--primary);    /* Highlights border in blue */
+  background: white;               /* Changes bg to white to indicate focus */
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1); /* Adds a soft blue glow ring */
+}
+
+/* Form Group Container for Input with Error/Success Messages */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+/* Error State for Input Fields */
+.form-input.input-error {
+  border-color: var(--error);      /* Red border for errors */
+  background: #fef2f2;             /* Light red background */
+}
+
+.form-input.input-error:focus {
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.1); /* Red glow for error state */
+  border-color: var(--error);
+}
+
+/* Error Message Text */
+.error-text {
+  font-size: 0.75rem;
+  color: var(--error);
+  font-weight: 500;
+  margin-top: -0.2rem;
+}
+
+/* Success Message Text */
+.success-text {
+  font-size: 0.75rem;
+  color: var(--success);
+  font-weight: 500;
+  margin-top: -0.2rem;
+}
+
+/* --- Payment Method Buttons --- */
+.payment-options { display: flex; gap: 0.75rem; margin-bottom: 1.5rem; } /* Horizontal row of buttons */
+
+.payment-btn {
+  flex: 1;                         /* Each button takes equal width */
+  padding: 0.8rem;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  transition: var(--transition);
+}
+
+.payment-btn:hover { background: #f8fafc; border-color: #cbd5e1; }
+
+/* Active Payment Button Style */
+.payment-btn.active { 
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); /* Gradient fill */
+  color: white;                    /* White text */
+  border-color: transparent;       /* Remove border */
+  box-shadow: 0 4px 10px rgba(79, 70, 229, 0.3); /* Colored shadow glow */
+}
+
+/* Credit Card Input Container */
+.card-details { 
+  display: grid; gap: 1rem; 
+  background: linear-gradient(to bottom right, #f8fafc, #f1f5f9); /* Subtle diagonal gradient */
+  padding: 1.25rem; 
+  border-radius: 12px; 
+  border: 1px solid var(--border);
+}
+
+/* --- Sidebar & Summary --- */
+.summary-item {
+  display: flex; justify-content: space-between; align-items: flex-start; /* Spread name and price apart */
+  margin-bottom: 1rem; font-size: 0.9rem; padding-bottom: 1rem;
+  border-bottom: 1px dashed var(--border); /* Dashed line separator between items */
+}
+
+.item-name { font-weight: 500; color: var(--text-main); }
+.item-actions { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; } /* Aligns price and trash icon to right */
+
+/* Delete Button Style */
+.btn-icon-danger {
+  background: #fee2e2; border: none; color: var(--error); cursor: pointer;
+  padding: 6px; border-radius: 8px; display: flex; transition: var(--transition);
+}
+.btn-icon-danger:hover { background: var(--error); color: white; } /* Turns solid red on hover */
+
+.totals { margin: 1rem 0; font-size: 0.95rem; background: #f8fafc; padding: 1rem; border-radius: 12px; }
+.totals .row { display: flex; justify-content: space-between; margin-bottom: 0.6rem; color: var(--text-muted); }
+
+.totals .row.total {
+  color: var(--heading-color); 
+  font-weight: 800; font-size: 1.25rem; /* Large bold text for Final Total */
+  margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); /* Separator line */
+}
+
+.text-success { color: var(--success); font-weight: 600; } /* Styling for "Free" text */
+
+/* --- Primary Action Buttons --- */
+.primary-btn {
+  width: 100%;                     /* Full width */
+  /* Gradient background creates a premium feel */
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white; 
+  border: none;
+  padding: 1rem; 
+  border-radius: 12px; 
+  font-size: 1rem;
+  font-weight: 600; 
+  cursor: pointer; 
+  transition: var(--transition);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3); /* Drop shadow matches button color */
+  letter-spacing: 0.5px;
+}
+
+.primary-btn:hover:not(:disabled) { 
+  transform: translateY(-2px);     /* Moves button up on hover */
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.4); /* Expands shadow */
+}
+
+.primary-btn:disabled { 
+  background: #cbd5e1;             /* Grey background */
+  cursor: not-allowed;             /* "No entry" mouse cursor */
+  box-shadow: none;                /* Removes shadow */
+}
+
+.back-btn { 
+  display: flex; align-items: center; gap: 0.5rem; 
+  background: white; border: 1px solid var(--border); 
+  padding: 0.5rem 1rem; border-radius: 8px;
+  color: var(--text-muted); cursor: pointer; font-size: 0.9rem; font-weight: 500;
+  transition: var(--transition);
+}
+.back-btn:hover { border-color: var(--primary); color: var(--primary); }
+
+.text-btn { background: none; border: none; color: var(--primary); cursor: pointer; font-weight: 600; }
+.text-btn:hover { text-decoration: underline; }
+
+/* --- Modals, UPI & Success --- */
+.modal-backdrop {
+  position: fixed; inset: 0;       /* Covers entire screen top/left/right/bottom */
+  background: rgba(15, 23, 42, 0.6); /* Dark overlay */
+  display: flex; justify-content: center; align-items: center; /* Centers the modal */
+  z-index: 1000;                   /* Highest layer to sit on top of everything */
+  backdrop-filter: blur(4px);      /* Blurs the content behind the modal */
+  animation: fadeIn 0.3s ease forwards; /* Triggers fade in animation */
+}
+.modal-content { 
+  width: 90%; max-width: 400px; text-align: center; 
+  animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy entrance animation */
+}
+
+.upi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+.upi-item {
+  display: flex; flex-direction: column; align-items: center; gap: 0.5rem; padding: 1rem;
+  border: 1px solid var(--border); background: white; border-radius: 12px; cursor: pointer;
+  transition: var(--transition);
+}
+.upi-item:hover { border-color: var(--primary); background: #eef2ff; transform: translateY(-2px); }
+.upi-item img { width: 40px; height: 40px; object-fit: contain; } /* Ensures logos fit nicely */
+
+.success-view { height: 80vh; display: flex; justify-content: center; align-items: center; }
+.success-card { text-align: center; max-width: 450px; border-top: 6px solid var(--success); } /* Green top border */
+.success-icon-container { margin-bottom: 1.5rem; animation: popIn 0.6s ease; }
+
+.status-badge {
+  margin-top: 1rem; padding: 0.75rem; border-radius: 8px; font-size: 0.9rem; font-weight: 500; text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+/* Variant for Error messages */
+.status-badge.error { background: #fef2f2; color: var(--error); border: 1px solid #fecaca; }
+/* Variant for Loading messages */
+.status-badge.loading { background: #eef2ff; color: var(--primary); border: 1px solid #c7d2fe; }
+
+/* --- Animations --- */
+.fade-in { animation: fadeIn 0.5s ease forwards; opacity: 0; }
+.slide-down { animation: slideDown 0.4s ease forwards; opacity: 0; }
+
+/* Keyframes define the start and end states of animations */
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes popIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+/* --- LOYALTY POINTS SECTION STYLES --- */
+.loyalty-points-container {
+  background: linear-gradient(135deg, var(--primary-light) 0%, #c7d2fe 100%);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin: 1rem 0;
+  border: 1px solid #a5b4fc;
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.15);
+}
+
+.loyalty-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.loyalty-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  margin: 0;
+}
+
+.loyalty-balance {
+  background: rgba(79, 70, 229, 0.1);
+  color: var(--primary-dark);
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid rgba(79, 70, 229, 0.2);
+}
+
+.loyalty-checkbox-wrapper {
+  margin-bottom: 1rem;
+}
+
+.loyalty-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  color: var(--primary-dark);
+  font-weight: 500;
+  user-select: none;
+}
+
+.loyalty-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: var(--primary);
+}
+
+.loyalty-redeem-section {
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(79, 70, 229, 0.1);
+}
+
+.redeem-label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+  margin-bottom: 0.5rem;
+}
+
+.redeem-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.redeem-input {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  padding-right: 2.5rem;
+  border: 1px solid rgba(79, 70, 229, 0.3);
+  border-radius: 6px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--primary-dark);
+}
+
+.redeem-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: white;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.redeem-currency {
+  position: absolute;
+  right: 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-dark);
+}
+
+.loyalty-info {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  border: 1px solid rgba(79, 70, 229, 0.1);
+}
+
+.info-available {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--primary-dark);
+  font-weight: 500;
+}
+
+.info-error {
+  margin: 0.3rem 0 0 0;
+  font-size: 0.8rem;
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+.loyalty-earned {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(79, 70, 229, 0.05);
+  border-radius: 6px;
+  padding: 0.7rem 0.8rem;
+  font-size: 0.85rem;
+  color: var(--primary-dark);
+  font-weight: 500;
+  border: 1px solid rgba(79, 70, 229, 0.1);
+}
+
+.earned-icon {
+  font-size: 1.1rem;
+}
+
+.earned-text {
+  flex: 1;
+}
+
+/* Loyalty discount row in totals */
+.totals .loyalty-discount {
+  color: var(--success);
+  font-weight: 600;
+}
+
+.totals .loyalty-discount .text-success {
+  color: var(--success);
+}
+
+

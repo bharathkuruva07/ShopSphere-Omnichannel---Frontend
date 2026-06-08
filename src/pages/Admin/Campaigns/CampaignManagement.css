@@ -1,0 +1,443 @@
+/* ===== CAMPAIGN MANAGEMENT STYLES ===== */
+
+/* Page Container */
+.campaign-page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+/* ===== KPI SUMMARY CARDS ===== */
+.kpi-card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kpi-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+.kpi-card .kpi-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+.kpi-card .kpi-value {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+/* ===== SEARCH AND FILTER BAR ===== */
+.search-filter-bar .input-group {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.search-filter-bar .form-control:focus,
+.search-filter-bar .form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+/* ===== CAMPAIGN TABLE ===== */
+.campaign-table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.campaign-table .table {
+  margin-bottom: 0;
+}
+
+.campaign-table .table thead {
+  background-color: #f1f3f5;
+}
+
+.campaign-table .table thead th {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+  border-bottom: none;
+  padding: 1rem;
+}
+
+.campaign-table .table tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+.campaign-table .table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.campaign-table .table tbody td {
+  padding: 1rem;
+  vertical-align: middle;
+}
+
+/* Campaign Name Cell */
+.campaign-name {
+  font-weight: 600;
+  color: #212529;
+}
+
+.campaign-date {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+/* Status Badge */
+.status-badge {
+  padding: 0.4em 0.8em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: 20px;
+}
+
+.status-badge.active {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.completed {
+  background-color: #e2e3e5;
+  color: #495057;
+}
+
+/* Revenue Value */
+.revenue-value {
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.action-btn {
+  padding: 0.4rem 0.6rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.action-btn:hover {
+  transform: scale(1.05);
+}
+
+.btn-add-revenue {
+  background-color: #198754;
+  border-color: #198754;
+  color: white;
+}
+
+.btn-add-revenue:hover {
+  background-color: #157347;
+  border-color: #146c43;
+}
+
+.btn-add-revenue:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-report {
+  background-color: #066ba5;
+  border-color: #066ba5;
+}
+
+.btn-report:hover {
+  background-color: #055a8c;
+}
+
+.btn-edit {
+  background-color: #9783b9;
+  border-color: #9783b9;
+}
+
+.btn-edit:hover {
+  background-color: #7d6a9e;
+}
+
+/* ===== PAGINATION ===== */
+.pagination-footer {
+  background-color: #fff;
+  border-top: 1px solid #dee2e6;
+  padding: 0.75rem 1rem;
+}
+
+.pagination .page-link {
+  border-radius: 6px;
+  margin: 0 2px;
+  color: #0d6efd;
+  border: 1px solid #dee2e6;
+  padding: 0.4rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: white;
+}
+
+.pagination .page-item.disabled .page-link {
+  color: #adb5bd;
+  background-color: #f8f9fa;
+}
+
+/* ===== MODALS ===== */
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+}
+
+.modal-content {
+  border-radius: 16px;
+  border: none;
+}
+
+.modal-header {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+/* Form Input Styling */
+.modal .form-control {
+  border-radius: 8px;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid #dee2e6;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.modal .form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+}
+
+.modal .form-label,
+.modal label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6c757d;
+  margin-bottom: 0.3rem;
+}
+
+/* ===== REVENUE MODAL ===== */
+.revenue-display {
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.revenue-display .label {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+.revenue-display .value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+/* ===== TOAST NOTIFICATION ===== */
+.toast-container {
+  z-index: 1100;
+}
+
+.toast {
+  border-radius: 10px;
+  min-width: 280px;
+}
+
+.toast-body {
+  font-weight: 500;
+}
+
+/* ===== LOADING OVERLAY ===== */
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 1050;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-overlay .spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* ===== EMPTY STATE ===== */
+.empty-state {
+  padding: 3rem;
+  text-align: center;
+  color: #6c757d;
+}
+
+.empty-state-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.empty-state-text {
+  font-size: 1.1rem;
+}
+
+/* ===== CAMPAIGN REPORT STYLES ===== */
+.report-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.report-card {
+  background-color: #fff;
+  border-radius: 12px;
+  border: 1px solid #dee2e6;
+}
+
+.report-header {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #dee2e6;
+  margin-bottom: 1.5rem;
+}
+
+.report-row {
+  display: flex;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.report-row:last-child {
+  border-bottom: none;
+}
+
+.report-label {
+  flex: 0 0 45%;
+  font-weight: 600;
+  color: #212529;
+}
+
+.report-value {
+  flex: 1;
+  color: #495057;
+}
+
+.report-value.profit {
+  color: #198754;
+  font-weight: 700;
+}
+
+.report-value.loss {
+  color: #dc3545;
+  font-weight: 700;
+}
+
+.report-footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #adb5bd;
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  .report-card {
+    box-shadow: none;
+    border: 1px solid #000;
+  }
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+  .kpi-card .kpi-value {
+    font-size: 1.4rem;
+  }
+  
+  .campaign-table .table thead {
+    display: none;
+  }
+  
+  .campaign-table .table tbody tr {
+    display: block;
+    margin-bottom: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .campaign-table .table tbody td {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border: none;
+  }
+  
+  .campaign-table .table tbody td::before {
+    content: attr(data-label);
+    font-weight: 600;
+    color: #6c757d;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+  }
+  
+  .action-buttons {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .pagination .page-link {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.modal.show .modal-dialog {
+  animation: fadeIn 0.2s ease-out;
+}
+
+.toast.show {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Card hover effect */
+.card {
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}

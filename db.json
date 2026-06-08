@@ -1,0 +1,1300 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "Smart Watch",
+      "price": 3500,
+      "image": "https://images.unsplash.com/photo-1617043983671-adaadcaa2460?w=600&auto=format&fit=crop",
+      "description": "Advanced fitness tracking smart watch with heart rate monitor",
+      "category": "Electronics",
+      "stock": 37,
+      "rating": 4.6
+    },
+    {
+      "id": 3,
+      "name": "USB-C Cable",
+      "price": 250,
+      "image": "https://plus.unsplash.com/premium_photo-1669261149433-febd56c05327?w=600&auto=format&fit=crop",
+      "description": "Fast charging USB-C cable with data transfer capability",
+      "category": "Accessories",
+      "stock": 93,
+      "rating": 4.5
+    },
+    {
+      "id": 4,
+      "name": "Wireless Mouse",
+      "price": 600,
+      "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+      "description": "Ergonomic wireless mouse with precision tracking",
+      "category": "Electronics",
+      "stock": 27,
+      "rating": 4.7
+    },
+    {
+      "id": 5,
+      "name": "Phone Stand",
+      "price": 200,
+      "image": "https://images.unsplash.com/photo-1516245556508-7d60d4ff0f39?w=600&auto=format&fit=crop",
+      "description": "Adjustable phone stand for desk and tabletop use",
+      "category": "Accessories",
+      "stock": 49,
+      "rating": 4.4
+    },
+    {
+      "id": 6,
+      "name": "Phone Case",
+      "price": 250,
+      "image": "https://images.unsplash.com/photo-1592286927505-1def25115558?w=500&h=500&fit=crop",
+      "description": "Protective phone case with impact resistance",
+      "category": "Accessories",
+      "stock": 80,
+      "rating": 4.6
+    },
+    {
+      "id": 7,
+      "name": "Laptop Stand",
+      "category": "Accessories",
+      "price": 999,
+      "rating": 4.2,
+      "stock": 9,
+      "image": "https://images.unsplash.com/photo-1629317480826-910f729d1709?w=800",
+      "description": "Ergonomic stand."
+    },
+    {
+      "id": 8,
+      "name": "USB Hub",
+      "price": 1000,
+      "image": "https://plus.unsplash.com/premium_photo-1761043248662-42f371ad31b4?w=600&auto=format&fit=crop",
+      "description": "7-port USB hub with fast charging capability",
+      "category": "Electronics",
+      "stock": 43,
+      "rating": 4.7
+    },
+    {
+      "id": 9,
+      "name": "White T-shirt",
+      "price": 550,
+      "description": "Premium White Cotton Round Neck T-shirt for Men",
+      "category": "Fashion",
+      "stock": 25,
+      "image": "https://plus.unsplash.com/premium_photo-1718913936342-eaafff98834b?w=600&auto=format&fit=crop",
+      "rating": 4.5
+    },
+    {
+      "id": 10,
+      "name": "Sneakers",
+      "price": 2500,
+      "description": "Casual sneakers for daily wear",
+      "category": "Fashion",
+      "stock": 30,
+      "image": "https://images.unsplash.com/photo-1605034313761-73ea4a0cfbf3?w=600&auto=format&fit=crop",
+      "rating": 4.5
+    },
+    {
+      "id": 11,
+      "name": "Black Heels",
+      "price": 2500,
+      "description": "Black Leather peep toe heeled shoes",
+      "category": "Fashion",
+      "stock": 19,
+      "image": "https://images.unsplash.com/photo-1605733513549-de9b150bd70d?w=600&auto=format&fit=crop",
+      "rating": 4.5
+    },
+    {
+      "id": 12,
+      "name": "Side Table",
+      "category": "Home & Living",
+      "price": 1299,
+      "rating": 5,
+      "stock": 8,
+      "image": "https://images.unsplash.com/photo-1611486212557-88be5ff6f941?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3",
+      "description": "Smart storage and style in one perfect package"
+    },
+    {
+      "id": 14,
+      "name": "Slim Fit Denim Jeans (for men)",
+      "price": 1750,
+      "image": "https://images.unsplash.com/photo-1714143136372-ddaf8b606da7?w=600&auto=format&fit=crop",
+      "description": "Comfort stretch slim-fit denim with classic five-pocket styling — for men.",
+      "category": "Fashion",
+      "stock": 60,
+      "rating": 4.6
+    },
+    {
+      "id": 15,
+      "name": "Casual Hoodie (unisex)",
+      "price": 1300,
+      "image": "https://th.bing.com/th?id=OPAC.b7x8nDtYWdT9kw474C474&o=5&pid=21.1&c=17&bw=16&bc",
+      "description": "Brushed interior fleece hoodie with adjustable drawcord and kangaroo pocket — comfortable unisex style.",
+      "category": "Fashion",
+      "stock": 85,
+      "rating": 4.5
+    },
+    {
+      "id": 16,
+      "name": "Casual Sneakers",
+      "category": "Fashion",
+      "price": 1999,
+      "rating": 4.2,
+      "stock": 5,
+      "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800",
+      "description": "Breathable sneakers."
+    },
+    {
+      "id": 17,
+      "name": "Leather Wallet",
+      "category": "Fashion",
+      "price": 899,
+      "rating": 4,
+      "stock": 20,
+      "image": "https://images.unsplash.com/photo-1620109176813-e91290f6c795?fm=jpg&q=60&w=3000",
+      "description": "Handcrafted leather."
+    },
+    {
+      "id": 18,
+      "name": "Portable SSD",
+      "category": "Electronics",
+      "price": 6999,
+      "rating": 4.8,
+      "stock": 2,
+      "image": "https://images.unsplash.com/photo-1577538926210-fc6cc624fde2?w=800",
+      "description": "1TB ultra-fast storage."
+    },
+    {
+      "id": 19,
+      "name": "Phone Mount",
+      "category": "Accessories",
+      "price": 199,
+      "rating": 4,
+      "stock": 8,
+      "image": "https://images.unsplash.com/photo-1516245556508-7d60d4ff0f39?w=800",
+      "description": "Universal mount."
+    },
+    {
+      "id": 20,
+      "name": "Sofa Cushion",
+      "category": "Home & Living",
+      "price": 99,
+      "rating": 4,
+      "stock": 17,
+      "image": "https://images.unsplash.com/photo-1553114552-c4ece3a33c93?fm=jpg&q=60&w=3000",
+      "description": "Memory foam cushion."
+    },
+    {
+      "id": 21,
+      "name": "Table Lamp",
+      "category": "Home & Living",
+      "price": 650,
+      "rating": 4.3,
+      "stock": 14,
+      "image": "https://images.unsplash.com/photo-1517991104123-1d56a6e81ed9?fm=jpg&q=60&w=3000",
+      "description": "This sleek, minimalist design brings a contemporary aesthetic to any room"
+    },
+    {
+      "id": 22,
+      "name": "Organic T-Shirt",
+      "category": "Fashion",
+      "price": 350,
+      "rating": 4.1,
+      "stock": 19,
+      "image": "https://images.unsplash.com/photo-1666358085449-a10a39f33942?fm=jpg&q=60&w=3000",
+      "description": "Premium organic cotton for conscious comfort"
+    },
+    {
+      "id": 29,
+      "name": "Casual Loafers (for men)",
+      "price": 1999,
+      "image": "https://images.unsplash.com/photo-1615979474401-8a6a344de5bd?w=600&auto=format&fit=crop",
+      "description": "Slip-on loafers with soft lining and flexible sole for all-day comfort — for men.",
+      "category": "Fashion",
+      "stock": 29,
+      "rating": 4.4
+    },
+    {
+      "id": 30,
+      "name": "Ray-ban Wayfarer Sunglasses",
+      "price": 2500,
+      "description": "Protective Good-looking Sunglasses ",
+      "category": "Fashion",
+      "stock": 24,
+      "image": "https://images.unsplash.com/photo-1649119161997-00ffc8c24e11?w=600&auto=format&fit=crop",
+      "rating": 4.5
+    }
+  ],
+  "orders": [
+    {
+      "id": "ORD-1768216444518",
+      "userId": 3,
+      "items": [
+        {
+          "id": 3,
+          "name": "USB-C Cable",
+          "price": 250,
+          "image": "https://plus.unsplash.com/premium_photo-1669261149433-febd56c05327?w=600&auto=format&fit=crop",
+          "description": "Fast charging USB-C cable with data transfer capability",
+          "category": "Accessories",
+          "stock": 100,
+          "rating": 4.5,
+          "quantity": 1
+        },
+        {
+          "id": 4,
+          "name": "Wireless Mouse",
+          "price": 600,
+          "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+          "description": "Ergonomic wireless mouse with precision tracking",
+          "category": "Electronics",
+          "stock": 30,
+          "rating": 4.7,
+          "quantity": 1
+        }
+      ],
+      "total": 935,
+      "status": "shipped",
+      "trackingStatus": "Order Placed",
+      "createdAt": "2026-01-12T11:14:04.518Z",
+      "updatedAt": "2026-01-12T16:20:56.091Z",
+      "shippingAddress": {
+        "id": 1,
+        "name": "TechHaven Downtown",
+        "address": "12, MG Road, Central District, Mumbai - 400001",
+        "distance": "1.2 km"
+      },
+      "paymentMethod": "cod"
+    },
+    {
+      "id": "ORD-1768217338717",
+      "userId": 4,
+      "items": [
+        {
+          "id": 3,
+          "name": "USB-C Cable",
+          "price": 250,
+          "image": "https://plus.unsplash.com/premium_photo-1669261149433-febd56c05327?w=600&auto=format&fit=crop",
+          "description": "Fast charging USB-C cable with data transfer capability",
+          "category": "Accessories",
+          "stock": 100,
+          "rating": 4.5,
+          "quantity": 1
+        },
+        {
+          "id": 4,
+          "name": "Wireless Mouse",
+          "price": 600,
+          "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+          "description": "Ergonomic wireless mouse with precision tracking",
+          "category": "Electronics",
+          "stock": 30,
+          "rating": 4.7,
+          "quantity": 1
+        }
+      ],
+      "total": 935,
+      "status": "delivered",
+      "trackingStatus": "Delivered",
+      "createdAt": "2026-01-12T11:28:58.717Z",
+      "updatedAt": "2026-01-13T06:26:40.533Z",
+      "shippingAddress": {
+        "name": "bob",
+        "line1": "13/b,Krishna reddy nagar,kurnool,Andhra Pradesh",
+        "city": "Kurnool",
+        "state": "AndhraPradesh",
+        "pincode": "518003"
+      },
+      "paymentMethod": "cod"
+    },
+    {
+      "id": "ORD-1768217396005",
+      "userId": 4,
+      "items": [
+        {
+          "id": 14,
+          "name": "Slim Fit Denim Jeans (for men)",
+          "price": 1750,
+          "image": "https://images.unsplash.com/photo-1714143136372-ddaf8b606da7?w=600&auto=format&fit=crop",
+          "description": "Comfort stretch slim-fit denim with classic five-pocket styling — for men.",
+          "category": "Fashion",
+          "stock": 60,
+          "rating": 4.6,
+          "quantity": 1
+        },
+        {
+          "id": 10,
+          "name": "Sneakers",
+          "price": 2500,
+          "description": "Casual sneakers for daily wear",
+          "category": "Fashion",
+          "stock": 30,
+          "image": "https://images.unsplash.com/photo-1605034313761-73ea4a0cfbf3?w=600&auto=format&fit=crop",
+          "rating": 4.5,
+          "quantity": 1
+        }
+      ],
+      "total": 4675,
+      "status": "delivered",
+      "trackingStatus": "Out for Delivery",
+      "createdAt": "2026-01-12T11:29:56.005Z",
+      "updatedAt": "2026-01-12T16:21:21.101Z",
+      "shippingAddress": {
+        "id": 3,
+        "name": "TechHaven Express",
+        "address": "Plot 88, Phoenix Marketcity, Kurla, Mumbai - 400070",
+        "distance": "8.4 km"
+      },
+      "paymentMethod": "cod"
+    },
+    {
+      "id": "ORD-1768234796681",
+      "userId": 3,
+      "items": [
+        {
+          "id": 3,
+          "name": "USB-C Cable",
+          "price": 250,
+          "image": "https://plus.unsplash.com/premium_photo-1669261149433-febd56c05327?w=600&auto=format&fit=crop",
+          "description": "Fast charging USB-C cable with data transfer capability",
+          "category": "Accessories",
+          "stock": 100,
+          "rating": 4.5,
+          "quantity": 1
+        }
+      ],
+      "total": 275,
+      "status": "cancelled",
+      "trackingStatus": "Cancelled",
+      "createdAt": "2026-01-12T16:19:56.681Z",
+      "updatedAt": "2026-01-12T16:21:39.869Z",
+      "shippingAddress": {
+        "id": 3,
+        "name": "TechHaven Express",
+        "address": "Plot 88, Phoenix Marketcity, Kurla, Mumbai - 400070",
+        "distance": "8.4 km"
+      },
+      "paymentMethod": "cod"
+    },
+    {
+      "id": "ORD-1768235388152",
+      "userId": 5,
+      "items": [
+        {
+          "id": 2,
+          "name": "Smart Watch",
+          "price": 3500,
+          "image": "https://images.unsplash.com/photo-1617043983671-adaadcaa2460?w=600&auto=format&fit=crop",
+          "description": "Advanced fitness tracking smart watch with heart rate monitor",
+          "category": "Electronics",
+          "stock": 25,
+          "rating": 4.6,
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "name": "USB-C Cable",
+          "price": 250,
+          "image": "https://plus.unsplash.com/premium_photo-1669261149433-febd56c05327?w=600&auto=format&fit=crop",
+          "description": "Fast charging USB-C cable with data transfer capability",
+          "category": "Accessories",
+          "stock": 100,
+          "rating": 4.5,
+          "quantity": 1
+        },
+        {
+          "id": 1,
+          "name": "Wireless Headphones",
+          "price": 1500,
+          "image": "https://plus.unsplash.com/premium_photo-1679513691474-73102089c117?w=600&auto=format&fit=crop",
+          "description": "Premium noise-cancelling wireless headphones with 30-hour battery life",
+          "category": "Electronics",
+          "stock": 15,
+          "rating": 4.8,
+          "quantity": 1
+        }
+      ],
+      "total": 5775,
+      "status": "pending",
+      "trackingStatus": "Order Placed",
+      "createdAt": "2026-01-12T16:29:48.152Z",
+      "updatedAt": "2026-01-12T16:29:48.152Z",
+      "shippingAddress": {
+        "id": 3,
+        "name": "TechHaven Express",
+        "address": "Plot 88, Phoenix Marketcity, Kurla, Mumbai - 400070",
+        "distance": "8.4 km"
+      },
+      "paymentMethod": "cod"
+    },
+    {
+      "id": "ORD-1768235418935",
+      "userId": 5,
+      "items": [
+        {
+          "id": 9,
+          "name": "White T-shirt",
+          "price": 550,
+          "description": "Premium White Cotton Round Neck T-shirt for Men",
+          "category": "Fashion",
+          "stock": 25,
+          "image": "https://plus.unsplash.com/premium_photo-1718913936342-eaafff98834b?w=600&auto=format&fit=crop",
+          "rating": 4.5,
+          "quantity": 1
+        },
+        {
+          "id": 17,
+          "name": "Leather Wallet",
+          "category": "Fashion",
+          "price": 899,
+          "rating": 4,
+          "stock": 20,
+          "image": "https://images.unsplash.com/photo-1620109176813-e91290f6c795?fm=jpg&q=60&w=3000",
+          "description": "Handcrafted leather.",
+          "quantity": 1
+        }
+      ],
+      "total": 1593.9,
+      "status": "pending",
+      "trackingStatus": "Order Placed",
+      "createdAt": "2026-01-12T16:30:18.935Z",
+      "updatedAt": "2026-01-12T16:30:18.935Z",
+      "shippingAddress": {
+        "id": 1,
+        "name": "TechHaven Downtown",
+        "address": "12, MG Road, Central District, Mumbai - 400001",
+        "distance": "1.2 km"
+      },
+      "paymentMethod": "cod"
+    },
+    {
+      "id": "ORD-1768259726753",
+      "userId": 4,
+      "items": [
+        {
+          "id": 3,
+          "name": "USB-C Cable",
+          "price": 250,
+          "image": "https://plus.unsplash.com/premium_photo-1669261149433-febd56c05327?w=600&auto=format&fit=crop",
+          "description": "Fast charging USB-C cable with data transfer capability",
+          "category": "Accessories",
+          "stock": 100,
+          "rating": 4.5,
+          "quantity": 1
+        },
+        {
+          "id": 4,
+          "name": "Wireless Mouse",
+          "price": 600,
+          "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+          "description": "Ergonomic wireless mouse with precision tracking",
+          "category": "Electronics",
+          "stock": 30,
+          "rating": 4.7,
+          "quantity": 1
+        }
+      ],
+      "total": 935,
+      "status": "pending",
+      "trackingStatus": "Order Placed",
+      "createdAt": "2026-01-12T23:15:26.753Z",
+      "updatedAt": "2026-01-12T23:15:26.753Z",
+      "shippingAddress": {
+        "id": 1,
+        "name": "TechHaven Downtown",
+        "address": "12, MG Road, Central District, Mumbai - 400001",
+        "distance": "1.2 km"
+      },
+      "paymentMethod": "cod"
+    },
+    {
+      "id": "ORD-1768259726967",
+      "userId": 4,
+      "items": [
+        {
+          "id": 3,
+          "name": "USB-C Cable",
+          "price": 250,
+          "image": "https://plus.unsplash.com/premium_photo-1669261149433-febd56c05327?w=600&auto=format&fit=crop",
+          "description": "Fast charging USB-C cable with data transfer capability",
+          "category": "Accessories",
+          "stock": 100,
+          "rating": 4.5,
+          "quantity": 1
+        },
+        {
+          "id": 4,
+          "name": "Wireless Mouse",
+          "price": 600,
+          "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+          "description": "Ergonomic wireless mouse with precision tracking",
+          "category": "Electronics",
+          "stock": 30,
+          "rating": 4.7,
+          "quantity": 1
+        }
+      ],
+      "total": 935,
+      "status": "pending",
+      "trackingStatus": "Order Placed",
+      "createdAt": "2026-01-12T23:15:26.967Z",
+      "updatedAt": "2026-01-12T23:15:26.967Z",
+      "shippingAddress": {
+        "id": 1,
+        "name": "TechHaven Downtown",
+        "address": "12, MG Road, Central District, Mumbai - 400001",
+        "distance": "1.2 km"
+      },
+      "paymentMethod": "cod"
+    },
+    {
+      "id": "ORD-1768262927047",
+      "userId": 5,
+      "items": [
+        {
+          "id": 3,
+          "name": "USB-C Cable",
+          "price": 250,
+          "image": "https://plus.unsplash.com/premium_photo-1669261149433-febd56c05327?w=600&auto=format&fit=crop",
+          "description": "Fast charging USB-C cable with data transfer capability",
+          "category": "Accessories",
+          "stock": 100,
+          "rating": 4.5,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Smart Watch",
+          "price": 3500,
+          "image": "https://images.unsplash.com/photo-1617043983671-adaadcaa2460?w=600&auto=format&fit=crop",
+          "description": "Advanced fitness tracking smart watch with heart rate monitor",
+          "category": "Electronics",
+          "stock": 25,
+          "rating": 4.6,
+          "quantity": 1
+        },
+        {
+          "id": 4,
+          "name": "Wireless Mouse",
+          "price": 600,
+          "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+          "description": "Ergonomic wireless mouse with precision tracking",
+          "category": "Electronics",
+          "stock": 30,
+          "rating": 4.7,
+          "quantity": 1
+        }
+      ],
+      "total": 4785,
+      "status": "pending",
+      "trackingStatus": "Order Placed",
+      "createdAt": "2026-01-13T00:08:47.047Z",
+      "updatedAt": "2026-01-13T00:08:47.047Z",
+      "shippingAddress": {
+        "id": 1,
+        "name": "TechHaven Downtown",
+        "address": "12, MG Road, Central District, Mumbai - 400001",
+        "distance": "1.2 km"
+      },
+      "paymentMethod": "cod"
+    },
+    {
+      "id": "ORD-1768263028093",
+      "userId": 6,
+      "items": [
+        {
+          "id": 4,
+          "name": "Wireless Mouse",
+          "price": 600,
+          "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+          "description": "Ergonomic wireless mouse with precision tracking",
+          "category": "Electronics",
+          "stock": 30,
+          "rating": 4.7,
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "name": "USB-C Cable",
+          "price": 250,
+          "image": "https://plus.unsplash.com/premium_photo-1669261149433-febd56c05327?w=600&auto=format&fit=crop",
+          "description": "Fast charging USB-C cable with data transfer capability",
+          "category": "Accessories",
+          "stock": 100,
+          "rating": 4.5,
+          "quantity": 1
+        }
+      ],
+      "total": 935,
+      "status": "pending",
+      "trackingStatus": "Order Placed",
+      "createdAt": "2026-01-13T00:10:28.093Z",
+      "updatedAt": "2026-01-13T00:10:28.093Z",
+      "shippingAddress": {
+        "id": 3,
+        "name": "TechHaven Express",
+        "address": "Plot 88, Phoenix Marketcity, Kurla, Mumbai - 400070",
+        "distance": "8.4 km"
+      },
+      "paymentMethod": "cod"
+    },
+    {
+      "id": "ORD-1768267176960",
+      "userId": 3,
+      "items": [
+        {
+          "id": 10,
+          "name": "Sneakers",
+          "price": 2500,
+          "description": "Casual sneakers for daily wear",
+          "category": "Fashion",
+          "stock": 30,
+          "image": "https://images.unsplash.com/photo-1605034313761-73ea4a0cfbf3?w=600&auto=format&fit=crop",
+          "rating": 4.5,
+          "quantity": 1
+        },
+        {
+          "id": 14,
+          "name": "Slim Fit Denim Jeans (for men)",
+          "price": 1750,
+          "image": "https://images.unsplash.com/photo-1714143136372-ddaf8b606da7?w=600&auto=format&fit=crop",
+          "description": "Comfort stretch slim-fit denim with classic five-pocket styling — for men.",
+          "category": "Fashion",
+          "stock": 60,
+          "rating": 4.6,
+          "quantity": 1
+        },
+        {
+          "id": 15,
+          "name": "Casual Hoodie (unisex)",
+          "price": 1300,
+          "image": "https://th.bing.com/th?id=OPAC.b7x8nDtYWdT9kw474C474&o=5&pid=21.1&c=17&bw=16&bc",
+          "description": "Brushed interior fleece hoodie with adjustable drawcord and kangaroo pocket — comfortable unisex style.",
+          "category": "Fashion",
+          "stock": 85,
+          "rating": 4.5,
+          "quantity": 1
+        }
+      ],
+      "total": 6105,
+      "status": "cancelled",
+      "trackingStatus": "Cancelled",
+      "createdAt": "2026-01-13T01:19:36.960Z",
+      "updatedAt": "2026-01-15T07:16:35.866Z",
+      "shippingAddress": {
+        "name": "bob",
+        "line1": "13/b,Krishna reddy nagar,kurnool,Andhra Pradesh",
+        "city": "Kurnool",
+        "state": "AndhraPradesh",
+        "pincode": "518003"
+      },
+      "paymentMethod": "cod"
+    },
+    {
+      "id": "ORD-1768267177189",
+      "userId": 3,
+      "items": [
+        {
+          "id": 10,
+          "name": "Sneakers",
+          "price": 2500,
+          "description": "Casual sneakers for daily wear",
+          "category": "Fashion",
+          "stock": 30,
+          "image": "https://images.unsplash.com/photo-1605034313761-73ea4a0cfbf3?w=600&auto=format&fit=crop",
+          "rating": 4.5,
+          "quantity": 1
+        },
+        {
+          "id": 14,
+          "name": "Slim Fit Denim Jeans (for men)",
+          "price": 1750,
+          "image": "https://images.unsplash.com/photo-1714143136372-ddaf8b606da7?w=600&auto=format&fit=crop",
+          "description": "Comfort stretch slim-fit denim with classic five-pocket styling — for men.",
+          "category": "Fashion",
+          "stock": 60,
+          "rating": 4.6,
+          "quantity": 1
+        },
+        {
+          "id": 15,
+          "name": "Casual Hoodie (unisex)",
+          "price": 1300,
+          "image": "https://th.bing.com/th?id=OPAC.b7x8nDtYWdT9kw474C474&o=5&pid=21.1&c=17&bw=16&bc",
+          "description": "Brushed interior fleece hoodie with adjustable drawcord and kangaroo pocket — comfortable unisex style.",
+          "category": "Fashion",
+          "stock": 85,
+          "rating": 4.5,
+          "quantity": 1
+        }
+      ],
+      "total": 6105,
+      "status": "delivered",
+      "trackingStatus": "Delivered",
+      "createdAt": "2026-01-13T01:19:37.189Z",
+      "updatedAt": "2026-01-15T07:14:30.428Z",
+      "shippingAddress": {
+        "name": "bob",
+        "line1": "13/b,Krishna reddy nagar,kurnool,Andhra Pradesh",
+        "city": "Kurnool",
+        "state": "AndhraPradesh",
+        "pincode": "518003"
+      },
+      "paymentMethod": "cod"
+    },
+    {
+      "id": "ORD-1768267239114",
+      "userId": 3,
+      "items": [
+        {
+          "id": 3,
+          "name": "USB-C Cable",
+          "price": 250,
+          "image": "https://plus.unsplash.com/premium_photo-1669261149433-febd56c05327?w=600&auto=format&fit=crop",
+          "description": "Fast charging USB-C cable with data transfer capability",
+          "category": "Accessories",
+          "stock": 100,
+          "rating": 4.5,
+          "quantity": 1
+        },
+        {
+          "id": 4,
+          "name": "Wireless Mouse",
+          "price": 600,
+          "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+          "description": "Ergonomic wireless mouse with precision tracking",
+          "category": "Electronics",
+          "stock": 30,
+          "rating": 4.7,
+          "quantity": 1
+        }
+      ],
+      "total": 935,
+      "status": "pending",
+      "trackingStatus": "Order Placed",
+      "createdAt": "2026-01-13T01:20:39.114Z",
+      "updatedAt": "2026-01-13T01:20:39.114Z",
+      "shippingAddress": {
+        "name": "bob",
+        "line1": "13/b,Krishna reddy nagar,kurnool",
+        "city": "Kurnool",
+        "state": "AndhraPradesh",
+        "pincode": "518003"
+      },
+      "paymentMethod": "card"
+    },
+    {
+      "id": "ORD-1768281291881",
+      "userId": 3,
+      "items": [
+        {
+          "id": 19,
+          "name": "Phone Mount",
+          "category": "Accessories",
+          "price": 199,
+          "rating": 4,
+          "stock": 8,
+          "image": "https://images.unsplash.com/photo-1516245556508-7d60d4ff0f39?w=800",
+          "description": "Universal mount.",
+          "quantity": 2
+        }
+      ],
+      "total": 437.8,
+      "status": "pending",
+      "trackingStatus": "Order Placed",
+      "createdAt": "2026-01-13T05:14:51.881Z",
+      "updatedAt": "2026-01-13T05:14:51.881Z",
+      "shippingAddress": {
+        "id": 2,
+        "name": "TechHaven West",
+        "address": "Shop 45, Infinity Mall, Andheri West, Mumbai - 400053",
+        "distance": "5.8 km"
+      },
+      "paymentMethod": "cod"
+    },
+    {
+      "id": "ORD-1768283874163",
+      "userId": 8,
+      "items": [
+        {
+          "id": 3,
+          "name": "USB-C Cable",
+          "price": 250,
+          "image": "https://plus.unsplash.com/premium_photo-1669261149433-febd56c05327?w=600&auto=format&fit=crop",
+          "description": "Fast charging USB-C cable with data transfer capability",
+          "category": "Accessories",
+          "stock": 100,
+          "rating": 4.5,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Smart Watch",
+          "price": 3500,
+          "image": "https://images.unsplash.com/photo-1617043983671-adaadcaa2460?w=600&auto=format&fit=crop",
+          "description": "Advanced fitness tracking smart watch with heart rate monitor",
+          "category": "Electronics",
+          "stock": 25,
+          "rating": 4.6,
+          "quantity": 1
+        }
+      ],
+      "total": 4125,
+      "status": "pending",
+      "trackingStatus": "Order Placed",
+      "createdAt": "2026-01-13T05:57:54.163Z",
+      "updatedAt": "2026-01-13T05:57:54.163Z",
+      "shippingAddress": {
+        "name": "bob",
+        "line1": "13/b,Krishna reddy nagar,kurnool,Andhra Pradesh",
+        "city": "Kurnool",
+        "state": "AndhraPradesh",
+        "pincode": "518003"
+      },
+      "paymentMethod": "upi"
+    },
+    {
+      "id": "ORD-1768283929747",
+      "userId": 8,
+      "items": [
+        {
+          "id": 4,
+          "name": "Wireless Mouse",
+          "price": 600,
+          "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+          "description": "Ergonomic wireless mouse with precision tracking",
+          "category": "Electronics",
+          "stock": 30,
+          "rating": 4.7,
+          "quantity": 1
+        },
+        {
+          "id": 7,
+          "name": "Laptop Stand",
+          "category": "Accessories",
+          "price": 999,
+          "rating": 4.2,
+          "stock": 10,
+          "image": "https://images.unsplash.com/photo-1629317480826-910f729d1709?w=800",
+          "description": "Ergonomic stand.",
+          "quantity": 1
+        }
+      ],
+      "total": 1758.9,
+      "status": "delivered",
+      "trackingStatus": "Picked Up",
+      "createdAt": "2026-01-13T05:58:49.747Z",
+      "updatedAt": "2026-01-15T07:13:41.470Z",
+      "shippingAddress": {
+        "id": 1,
+        "name": "TechHaven Downtown",
+        "address": "12, MG Road, Central District, Mumbai - 400001",
+        "distance": "1.2 km"
+      },
+      "paymentMethod": "cod"
+    },
+    {
+      "id": "ORD-1768368549876",
+      "userId": 3,
+      "items": [
+        {
+          "id": 15,
+          "name": "Casual Hoodie (unisex)",
+          "price": 1300,
+          "image": "https://th.bing.com/th?id=OPAC.b7x8nDtYWdT9kw474C474&o=5&pid=21.1&c=17&bw=16&bc",
+          "description": "Brushed interior fleece hoodie with adjustable drawcord and kangaroo pocket — comfortable unisex style.",
+          "category": "Fashion",
+          "stock": 85,
+          "rating": 4.5,
+          "quantity": 1
+        },
+        {
+          "id": 20,
+          "name": "Sofa Cushion",
+          "category": "Home & Living",
+          "price": 99,
+          "rating": 4,
+          "stock": 17,
+          "image": "https://images.unsplash.com/photo-1553114552-c4ece3a33c93?fm=jpg&q=60&w=3000",
+          "description": "Memory foam cushion.",
+          "quantity": 1
+        },
+        {
+          "id": 29,
+          "name": "Casual Loafers (for men)",
+          "price": 1999,
+          "image": "https://images.unsplash.com/photo-1615979474401-8a6a344de5bd?w=600&auto=format&fit=crop",
+          "description": "Slip-on loafers with soft lining and flexible sole for all-day comfort — for men.",
+          "category": "Fashion",
+          "stock": 29,
+          "rating": 4.4,
+          "quantity": 1
+        }
+      ],
+      "total": 3737.8,
+      "status": "delivered",
+      "trackingStatus": "Delivered",
+      "createdAt": "2026-01-14T05:29:09.876Z",
+      "updatedAt": "2026-01-15T07:09:34.244Z",
+      "shippingAddress": {
+        "name": "bob",
+        "line1": "13/b,Krishna reddy nagar,kurnool,Andhra Pradesh",
+        "city": "Kurnool",
+        "state": "AndhraPradesh",
+        "pincode": "518003"
+      },
+      "paymentMethod": "upi"
+    },
+    {
+      "id": "ORD-1768460614464",
+      "userId": 1,
+      "items": [
+        {
+          "id": 12,
+          "name": "Side Table",
+          "category": "Home & Living",
+          "price": 1299,
+          "rating": 5,
+          "stock": 9,
+          "image": "https://images.unsplash.com/photo-1611486212557-88be5ff6f941?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3",
+          "description": "Smart storage and style in one perfect package",
+          "quantity": 1
+        }
+      ],
+      "total": 1415.69,
+      "status": "delivered",
+      "trackingStatus": "Picked Up",
+      "createdAt": "2026-01-15T07:03:34.464Z",
+      "updatedAt": "2026-01-15T07:04:58.310Z",
+      "shippingAddress": {
+        "id": 2,
+        "name": "TechHaven West",
+        "address": "Shop 45, Infinity Mall, Andheri West, Mumbai - 400053",
+        "distance": "5.8 km"
+      },
+      "paymentMethod": "cod",
+      "usedLoyaltyPoints": 1321,
+      "loyaltyDiscount": 13.21
+    },
+    {
+      "id": "ORD-1768461458518",
+      "userId": 1,
+      "items": [
+        {
+          "id": 4,
+          "name": "Wireless Mouse",
+          "price": 600,
+          "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+          "description": "Ergonomic wireless mouse with precision tracking",
+          "category": "Electronics",
+          "stock": 30,
+          "rating": 4.7,
+          "quantity": 1
+        }
+      ],
+      "total": 660,
+      "status": "shipped",
+      "trackingStatus": "Shipped",
+      "createdAt": "2026-01-15T07:17:38.518Z",
+      "updatedAt": "2026-01-15T07:18:01.260Z",
+      "shippingAddress": {
+        "name": "Admin User",
+        "line1": "pune",
+        "city": "pune",
+        "state": "maharastra",
+        "pincode": "504307"
+      },
+      "paymentMethod": "cod",
+      "usedLoyaltyPoints": 0,
+      "loyaltyDiscount": 0
+    },
+    {
+      "id": "ORD-1768535741007",
+      "userId": 3,
+      "items": [
+        {
+          "id": 3,
+          "name": "USB-C Cable",
+          "price": 250,
+          "image": "https://plus.unsplash.com/premium_photo-1669261149433-febd56c05327?w=600&auto=format&fit=crop",
+          "description": "Fast charging USB-C cable with data transfer capability",
+          "category": "Accessories",
+          "stock": 96,
+          "rating": 4.5,
+          "quantity": 1
+        },
+        {
+          "id": 2,
+          "name": "Smart Watch",
+          "price": 3500,
+          "image": "https://images.unsplash.com/photo-1617043983671-adaadcaa2460?w=600&auto=format&fit=crop",
+          "description": "Advanced fitness tracking smart watch with heart rate monitor",
+          "category": "Electronics",
+          "stock": 35,
+          "rating": 4.6,
+          "quantity": 1
+        },
+        {
+          "id": 7,
+          "name": "Laptop Stand",
+          "category": "Accessories",
+          "price": 999,
+          "rating": 4.2,
+          "stock": 10,
+          "image": "https://images.unsplash.com/photo-1629317480826-910f729d1709?w=800",
+          "description": "Ergonomic stand.",
+          "quantity": 1
+        }
+      ],
+      "total": 5223.9,
+      "status": "pending",
+      "trackingStatus": "Order Placed",
+      "createdAt": "2026-01-16T03:55:41.007Z",
+      "updatedAt": "2026-01-16T04:11:49.576Z",
+      "shippingAddress": {
+        "id": 2,
+        "name": "TechHaven West",
+        "address": "Shop 45, Infinity Mall, Andheri West, Mumbai - 400053",
+        "distance": "5.8 km"
+      },
+      "paymentMethod": "cod",
+      "usedLoyaltyPoints": 0,
+      "loyaltyDiscount": 0
+    },
+    {
+      "id": "ORD-1768536768603",
+      "userId": 3,
+      "items": [
+        {
+          "id": 3,
+          "name": "USB-C Cable",
+          "price": 250,
+          "image": "https://plus.unsplash.com/premium_photo-1669261149433-febd56c05327?w=600&auto=format&fit=crop",
+          "description": "Fast charging USB-C cable with data transfer capability",
+          "category": "Accessories",
+          "stock": 95,
+          "rating": 4.5,
+          "quantity": 1
+        },
+        {
+          "id": 4,
+          "name": "Wireless Mouse",
+          "price": 600,
+          "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+          "description": "Ergonomic wireless mouse with precision tracking",
+          "category": "Electronics",
+          "stock": 29,
+          "rating": 4.7,
+          "quantity": 1
+        }
+      ],
+      "total": 929.41,
+      "status": "delivered",
+      "trackingStatus": "Picked Up",
+      "createdAt": "2026-01-16T04:12:48.603Z",
+      "updatedAt": "2026-01-16T04:29:40.216Z",
+      "shippingAddress": {
+        "id": 3,
+        "name": "TechHaven Express",
+        "address": "Plot 88, Phoenix Marketcity, Kurla, Mumbai - 400070",
+        "distance": "8.4 km"
+      },
+      "paymentMethod": "cod",
+      "usedLoyaltyPoints": 559,
+      "loyaltyDiscount": 5.59
+    },
+    {
+      "id": "ORD-1768537220908",
+      "userId": 3,
+      "items": [
+        {
+          "id": 4,
+          "name": "Wireless Mouse",
+          "price": 600,
+          "image": "https://images.unsplash.com/photo-1527814050087-3793815479db?w=500&h=500&fit=crop",
+          "description": "Ergonomic wireless mouse with precision tracking",
+          "category": "Electronics",
+          "stock": 28,
+          "rating": 4.7,
+          "quantity": 1
+        },
+        {
+          "id": 3,
+          "name": "USB-C Cable",
+          "price": 250,
+          "image": "https://plus.unsplash.com/premium_photo-1669261149433-febd56c05327?w=600&auto=format&fit=crop",
+          "description": "Fast charging USB-C cable with data transfer capability",
+          "category": "Accessories",
+          "stock": 94,
+          "rating": 4.5,
+          "quantity": 1
+        }
+      ],
+      "total": 935,
+      "status": "delivered",
+      "trackingStatus": "Delivered",
+      "createdAt": "2026-01-16T04:20:20.908Z",
+      "updatedAt": "2026-01-16T04:21:20.531Z",
+      "shippingAddress": {
+        "name": "bob",
+        "line1": "13/b,Krishna reddy nagar,kurnool,Andhra Pradesh",
+        "city": "Kurnool",
+        "state": "AndhraPradesh",
+        "pincode": "518003"
+      },
+      "paymentMethod": "cod",
+      "usedLoyaltyPoints": 0,
+      "loyaltyDiscount": 0
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "email": "admin@shop.com",
+      "password": "admin123",
+      "name": "Admin User",
+      "role": "admin",
+      "createdAt": "2025-01-01T00:00:00Z",
+      "loyaltyPoints": 79
+    },
+    {
+      "name": "Aman Bob",
+      "mobileNumber": "7575848447",
+      "email": "ab@bob.com",
+      "password": "Aman@123",
+      "role": "customer",
+      "loyaltyPoints": 17,
+      "createdAt": "2026-01-08T07:53:24.481Z",
+      "id": 2
+    },
+    {
+      "name": "bob",
+      "mobileNumber": "7893939141",
+      "email": "bob@gmail.com",
+      "password": "Bob@123",
+      "role": "customer",
+      "loyaltyPoints": 5569,
+      "createdAt": "2026-01-12T00:52:23.898Z",
+      "id": 3
+    },
+    {
+      "name": "Rupa",
+      "mobileNumber": "7893939141",
+      "email": "rupa@gmail.com",
+      "password": "Rupa@123",
+      "role": "customer",
+      "loyaltyPoints": 186,
+      "createdAt": "2026-01-12T23:14:43.558Z",
+      "id": 4
+    },
+    {
+      "name": "venu",
+      "mobileNumber": "0123456789",
+      "email": "venu@gmail.com",
+      "password": "Venu@123",
+      "role": "customer",
+      "loyaltyPoints": 478,
+      "createdAt": "2026-01-13T00:08:18.120Z",
+      "id": 5
+    },
+    {
+      "name": "bharath",
+      "mobileNumber": "7893939141",
+      "email": "bharath@gmail.com",
+      "password": "Bharath@77",
+      "role": "customer",
+      "loyaltyPoints": 93,
+      "createdAt": "2026-01-13T00:10:10.569Z",
+      "id": 6
+    },
+    {
+      "name": "aman",
+      "mobileNumber": "7893939141",
+      "email": "aman@gmail.com",
+      "password": "Aman@123",
+      "role": "customer",
+      "loyaltyPoints": 0,
+      "createdAt": "2026-01-13T05:40:42.039Z",
+      "id": 7
+    },
+    {
+      "name": "dinesh",
+      "mobileNumber": "1234567890",
+      "email": "diensh@gmail.com",
+      "password": "Dinesh@456",
+      "role": "customer",
+      "loyaltyPoints": 587,
+      "createdAt": "2026-01-13T05:42:22.913Z",
+      "id": 8
+    },
+    {
+      "name": "Maddi Taruni",
+      "mobileNumber": "1234567890",
+      "email": "asritha@gmail.com",
+      "password": "Asri@0105",
+      "role": "customer",
+      "loyaltyPoints": 1444,
+      "createdAt": "2026-01-14T15:03:08.767Z",
+      "id": 9
+    },
+    {
+      "name": "bob1",
+      "mobileNumber": "9494510242",
+      "email": "bo1b@gmail.com",
+      "password": "Harshith@222",
+      "role": "customer",
+      "loyaltyPoints": 455,
+      "createdAt": "2026-01-15T13:07:35.621Z",
+      "id": 10
+    },
+    {
+      "name": "bhai",
+      "mobileNumber": "1234567890",
+      "email": "bhai@cog.com",
+      "password": "Bhaai@123",
+      "role": "customer",
+      "loyaltyPoints": 0,
+      "createdAt": "2026-01-15T14:39:25.357Z",
+      "id": 11
+    },
+    {
+      "name": "Bruce Wayne",
+      "mobileNumber": "9390876757",
+      "email": "bruce@gmail.com",
+      "password": "Bruce@12",
+      "role": "customer",
+      "loyaltyPoints": 60,
+      "createdAt": "2026-01-16T03:27:43.964Z",
+      "id": 12
+    }
+  ],
+  "stores": [
+    {
+      "id": 1,
+      "name": "TechHaven Downtown",
+      "address": "12, MG Road, Central District, Mumbai - 400001",
+      "distance": "1.2 km"
+    },
+    {
+      "id": 2,
+      "name": "TechHaven West",
+      "address": "Shop 45, Infinity Mall, Andheri West, Mumbai - 400053",
+      "distance": "5.8 km"
+    },
+    {
+      "id": 3,
+      "name": "TechHaven Express",
+      "address": "Plot 88, Phoenix Marketcity, Kurla, Mumbai - 400070",
+      "distance": "8.4 km"
+    }
+  ],
+  "campaigns": [
+    {
+      "name": "sankranthi festival",
+      "targetAudience": "All customers",
+      "budget": 20000,
+      "startDate": "2026-01-15",
+      "endDate": "2026-01-17",
+      "id": "CMP-1768460490607",
+      "revenueGenerated": 1000,
+      "status": "Active",
+      "active": true
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+.order-tracking-page {
+  min-height: 100vh;
+}
+
+.tracking-timeline {
+  padding: 20px 0;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-marker {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.timeline-marker.completed {
+  background: #52c41a;
+}
+
+.timeline-marker.pending {
+  background: #d9d9d9;
+}
+
+.timeline-line {
+  width: 3px;
+  height: 60px;
+  background: linear-gradient(to bottom, #667eea, #e9ecef);
+  margin-left: 23.5px;
+}
+
+.address-box {
+  border-left: 4px solid #667eea;
+}
+
+.summary-item {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+  .timeline-marker {
+    width: 40px;
+    height: 40px;
+  }
+
+  .timeline-line {
+    margin-left: 18px;
+  }
+}
+
+/* Order Tracking Modal Overrides */
+.custom-modal-overlay .custom-modal-box {
+  max-width: 1050px;
+  width: 92%;
+}
+
+.custom-modal-box .modal-body .col-lg-7 {
+  flex: 0 0 58.33%;
+  max-width: 58.33%;
+}
+
+.custom-modal-box .modal-body .col-lg-5 {
+  flex: 0 0 41.67%;
+  max-width: 41.67%;
+}
+
+@media (max-width: 991px) {
+  .custom-modal-box .modal-body .col-lg-7,
+  .custom-modal-box .modal-body .col-lg-5 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

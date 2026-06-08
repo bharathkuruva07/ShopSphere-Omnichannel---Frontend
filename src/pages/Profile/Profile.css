@@ -1,0 +1,332 @@
+.profile-page {
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.card {
+  overflow: hidden;
+  border: none;
+}
+
+.user-header-card {
+  background: white;
+  border-radius: 12px;
+}
+
+.stat-card {
+  border-radius: 12px;
+  transition: transform 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.loyalty-card {
+  background: linear-gradient(135deg, #fffcf5 0%, #fff4e6 100%);
+  border-left: 5px solid #ffc107;
+  border-radius: 12px;
+}
+
+/* Table Enhancements */
+.table thead th {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #6c757d;
+  border-top: none;
+}
+
+.table tbody td {
+  padding: 1rem 0.75rem;
+}
+
+.badge {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* Modal Styles */
+.custom-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 1050;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-modal-box {
+  background: white;
+  width: 90%;
+  max-width: 900px;
+  height: 80vh;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 10px;
+}
+
+@media (max-width: 991px) {
+  .custom-modal-box {
+    height: 90vh;
+    width: 95%;
+  }
+}
+.profile-page {
+  min-height: 100vh;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.user-header-card {
+  background: white;
+  border-radius: 12px;
+}
+
+.stat-card {
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* LOYALTY CARD STYLES */
+.loyalty-card {
+  background: linear-gradient(135deg, #fff5e1 0%, #ffe8cc 100%);
+  border-left: 4px solid #ffc107;
+  border-radius: 12px;
+}
+
+/* FIX: Ensure content inside card does not bleed out */
+.card {
+  overflow: hidden;
+}
+
+/* NEW: Reward Cards Styles */
+.reward-card {
+  transition: all 0.2s ease-in-out;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.reward-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-color: #ffc107;
+}
+
+.bg-warning-subtle {
+  background-color: rgba(255, 193, 7, 0.2);
+}
+
+/* PREFERENCES */
+.preference-card {
+  border-radius: 12px;
+  background: white;
+}
+
+.pref-item {
+  transition: all 0.2s ease;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
+
+.pref-item:hover {
+  background-color: #e9ecef;
+}
+
+.pref-item.active-pref {
+  background-color: #e7f1ff;
+  border-color: #0d6efd;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* FIX: Prevent badge labels from wrapping or squashing */
+.badge {
+  white-space: nowrap;
+  width: fit-content;
+}
+/* Ensure badges inside the table stay relative to their cell */
+.table td .badge {
+  position: relative !important; /* Forces badge to stay inside the <td> */
+  top: auto !important;
+  right: auto !important;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Fix for Active Member badge in the Loyalty card */
+.loyalty-card .badge {
+  position: relative;
+  float: none;
+}
+
+/* Maintain existing UI container styles */
+.card {
+  position: relative; /* Container stays as reference */
+  overflow: hidden;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+/* Fix for the Status and Active Member labels */
+.badge {
+  display: inline-flex !important; /* Ensures background wraps text perfectly */
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem !important; /* Even padding for better look */
+  line-height: 1 !important;
+  white-space: nowrap; /* Prevents text from breaking */
+  height: auto !important; /* Removes any height restriction */
+  min-width: 80px; /* Optional: ensures a consistent ribbon size */
+}
+
+/* Specific fix for labels inside the table */
+.table td .badge {
+  position: relative !important;
+  top: 0 !important;
+  right: 0 !important;
+  vertical-align: middle;
+}
+
+/* Fix for Active Member in Loyalty Card */
+.loyalty-card .badge {
+  margin-bottom: 0;
+  display: inline-flex !important;
+}
+
+/* =========================================
+   CUSTOM MODAL STYLES (Fixed Size)
+   ========================================= */
+/* Fix for Modal Status Ribbon */
+.custom-modal-box .badge {
+  position: static !important; /* Prevents the ribbon from sticking to the screen */
+  float: none !important;
+  display: inline-flex !important;
+  align-items: center;
+  padding: 0.5rem 1rem !important;
+  line-height: 1 !important;
+}
+
+/* Ensure the sidebar content is scrollable as a unit */
+.col-lg-4.bg-light.border-start {
+  overflow-y: auto !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Modal UI Consistency */
+.custom-modal-overlay {
+  z-index: 10000; /* Ensure it stays above everything */
+}
+
+.custom-modal-box {
+  display: flex;
+  flex-direction: row; /* Desktop layout */
+  overflow: hidden; /* Main box doesn't scroll, inner columns do */
+}
+
+/* Adjust for Mobile View */
+@media (max-width: 992px) {
+  .custom-modal-box {
+    flex-direction: column;
+    overflow-y: auto; /* Box scrolls on mobile */
+  }
+  .col-lg-8, .col-lg-4 {
+    overflow: visible !important; /* Content flows naturally */
+    width: 100%;
+  }
+}
+.custom-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.custom-modal-box {
+  background: white;
+  width: 75vw;
+  height: 85vh;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideUp 0.3s ease-out;
+}
+
+/* FIX: Sidebar minimum width to prevent status label pop-out */
+.col-lg-4.bg-light.border-start {
+  min-width: 320px !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 992px) {
+  .custom-modal-box {
+    width: 95vw;
+    height: 90vh;
+    flex-direction: column;
+  }
+}
